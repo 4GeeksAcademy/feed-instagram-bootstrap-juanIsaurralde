@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .nav-link {
+            color: grey;
+        }
+
+        .nav-link:active {
+            color: blue;
+        }
+    </style>
+</head>
+<title>Feed Instagram with bootstrap</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"><i class="fa-brands fa-instagram"></i> Instagram</span>
+            <span class="d-flex">
+                <button type="button" class="btn btn-success me-1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a New Post
+                </button>
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </nav>
+    <!-- NavTabs -->
+    <div class="d-flex justify-content-center">
+        <ul class="nav nav-pill justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item " role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item " role="presentation">
+                <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fa-solid fa-image"></i></button>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby1.jpg" alt="img1"></div>
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby2.jpg" alt="img2"></div>
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby3.jpg" alt="img3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby4.jpg" alt="img1"></div>
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby5.jpg" alt="img2"></div>
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby6.jpg" alt="img3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby7.png" alt="img1"></div>
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby8.jpg" alt="img2"></div>
+                    <div class="col-4 p-1 "><img class="img-fluid w-100" style="height: 30vw; object-fit: cover;"
+                            src="img/rugby9.png" alt="img3"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="card mb-3">
+                        <div class="card-header d-flex p-2 justify-content-between bg-white">
+                            <h5>Rugby Foto 1</h5>
+                            <small>1/9</small>
+                        </div>
+                        <img src="img/rugby1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">204 Likes</h6>
+                            <p class="card-text">Es un hecho establecido hace demasiado tiempo que un lector se
+                                distraerá con el
+                                contenido del texto de un sitio mientras que mira su diseño.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-flex p-2 justify-content-between bg-white">
+                            <h5>Rugby Foto 2</h5>
+                            <small>2/9</small>
+                        </div>
+                        <img src="img/rugby2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">204 Likes</h6>
+                            <p class="card-text">Es un hecho establecido hace demasiado tiempo que un lector se
+                                distraerá con el
+                                contenido del texto de un sitio mientras que mira su diseño.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-flex p-2 justify-content-between bg-white">
+                            <h5>Rugby Foto 3</h5>
+                            <small>3/9</small>
+                        </div>
+                        <img src="img/rugby3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">204 Likes</h6>
+                            <p class="card-text">Es un hecho establecido hace demasiado tiempo que un lector se
+                                distraerá con el
+                                contenido del texto de un sitio mientras que mira su diseño.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-flex p-2 justify-content-between bg-white">
+                            <h5>Rugby Foto 4</h5>
+                            <small>4/9</small>
+                        </div>
+                        <img src="img/rugby4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">204 Likes</h6>
+                            <p class="card-text">Es un hecho establecido hace demasiado tiempo que un lector se
+                                distraerá con el
+                                contenido del texto de un sitio mientras que mira su diseño.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="message-text" class="col-form-label">Caption:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                    <div class="row p-2">
+                        <button class="col-1 btn-light m-1 p-1 rounded border"><i
+                                class="fa-solid fa-camera"></i></button>
+                        <button class="col-1 btn-light m-1 p-1 rounded border"><i
+                                class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
